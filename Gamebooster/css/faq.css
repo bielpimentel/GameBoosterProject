@@ -1,0 +1,161 @@
+.pesquisa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.lupa {
+    background-color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    height: 67px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lupa img {
+    max-width: 100%;
+    height: auto;
+}
+
+.area-busca {
+    height: 65px;
+    width: 550px;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+}
+
+.botao-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: #FF2400;
+    height: 67px;
+    width: 140px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.topicos-faq {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topicos-faq h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #968f8f;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #968f8f;
+    cursor: pointer;
+}
+
+#branco {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.ver-laran:hover, #branco:hover {
+    color: #FF2400;
+    border-color: #FF2400;
+}
+
+.caixa-faq {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-bottom: 180px;
+    background-image: url(../imagens/jinx.png);
+    background-repeat: no-repeat;
+    background-position-x: 117%;
+    background-position-y: 40%;
+    background-size: 60%;
+}
+
+.jinx {
+    z-index: -1;
+    max-width: 100%;
+    height: 700px;
+    /* float: right;
+    position: absolute;
+    right: 200px;
+    top: 800px; */
+}
+
+.caixa-info {
+    margin-bottom: 22px;
+}
+
+.caixa-info .caixa-a {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.caixa-info-cima {
+    height: 86px;
+    width: 588px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111111;
+    border-radius: 20px;
+}
+
+.caixa-info-cima h3 {
+    color: #FFFFFF;
+    font-size: 1.375rem;
+    margin: 15px 0 10px 0;
+    padding-left: 30px;
+}
+
+.caixa-info-baixo {
+    height: 212px;
+    width: 588px;
+    background: linear-gradient(180deg, #111111 1.56%, #414141 110.39%, rgba(0, 0, 0, 0) 110.4%);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.caixa-info-baixo p {
+    font-size: 1.25rem;
+    color: #A5A5A5;
+    padding: 20px;
+    margin: 0;
+}
+
+.circulo {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.linha-h {
+    background-color: #ffffff;
+    height: 2px;
+    width: 20px;
+    border-radius: 20px;
+}
+
+.linha-v {
+    position: absolute;
+    background-color: #ffffff;
+    height: 20px;
+    width: 2px;
+    border-radius: 20px;
+}
+
+.caixa-a .linha-v {
+    height: 2px;
+}

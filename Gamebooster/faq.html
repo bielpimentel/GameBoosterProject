@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <script src="script/script.js"></script>
+    <title>GameBooster</title>
+</head>
+<body>
+
+    <div>
+        <div class="overlay">
+            
+            <div class="login">
+                <div class="div-sair">
+                    <div class="sair" onclick="toggleLogin()">X</div>
+                </div>
+
+                <div class="login-texto">
+                    <h1>Efetuar Login</h1>
+
+                    <p>Acesse sua conta GameBooster</p>
+                </div>
+
+                <div class="continuar-ops">
+                    <div class="continuar">
+                        <img src="imagens/google.png" alt="Logo do Google">
+                        <p>Continuar com o Google</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook.">
+                        <p>Continuar com o Facebook</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/discord-icon.png" alt="Logo do Discord.">
+                        <p>Continuar com o Discord</p>
+                    </div>
+                </div>
+
+                <div class="centraliza-log">
+                    <div class="div-ou">
+                        <div></div>
+                        
+                        <p>ou</p>
+    
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="email-senha">
+                    
+                    <form action="#" class="form">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
+
+                        <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+                    </form>
+
+                    <p class="esq-sen">Esqueceu a senha?</p>
+
+                </div>
+
+                <div class="confirmar">
+                    <button>Confirmar</button>
+                </div>
+
+                <div class="confirmar">
+                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html"><img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="item-nav servicos-drop">
+                        <div class="op-serv">
+                            <p>Serviços</p>
+
+                            <div class="triangulo"></div>
+                        </div>
+                        <ul class="caixa-servicos">
+                            <li><a class="servico" href="#">PokeXGames</a></li>
+                            <li><a class="servico" href="lol.html">League of Legends</a></li>
+                            <li><a class="servico" href="#">Tibia</a></li>
+                            <li><a class="servico" href="#">Contas</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-nav"><a href="avaliacoes.html">Avaliações</a></li>
+                    <li class="item-nav"><a href="faq.html">FAQ</a></li>
+                    <li id="login-icone">
+                        <button id="botao-login" onclick="toggleLogin()">
+                                <img id="login-icone-img" src="imagens/login-icone.png" alt="Ícone de login.">
+                                <span>Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>s
+
+    <main>
+        <div class="caixa-titulo-av">
+            <h1>FICOU COM DÚVIDAS? NÃO SE PREOCUPE, AQUI VOCÊ RESOLVE!</h1>
+
+            <p>Nossa seção de perguntas frequentes é constantemente atualizada e preparada para te ajudar, mas se a dúvida persistir, lembre-se que possuímos diversas formas de contato, ok?!</p>
+        
+            <form class="pesquisa-container">
+                <label for="busca" class="lupa">
+                    <img src="imagens/search-icon.png" alt="Um Ícone de uma Lupa.">
+                </label>
+                <input class="area-busca" id="busca" type="text" placeholder="Digite aqui um tópico ou termo específico">
+                <a class="botao-busca" href="#">
+                    BUSCAR
+                </a>
+            </form>
+        </div>
+
+        <div class="container topicos-faq">
+            <h2 class="ver-laran" id="branco">PAGAMENTO</h2>
+            <h2 class="ver-laran">REQUISITOS</h2>
+            <h2 class="ver-laran">PRAZOS</h2>
+            <h2 class="ver-laran">GARANTIA</h2>
+            <h2 class="ver-laran">PRIVACIDADE</h2>
+        </div>
+
+        <div class="container3 caixa-faq">
+            <div>
+                <div class="caixa-info">
+
+                    <div class="caixa-info-cima caixa-a">
+                        <h3>Quais são as formas de pagamento aceitas?</h3>
+                        <div class="circulo">
+                            <div class="linha-h"></div>
+                            <div class="linha-v"></div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-info-baixo">
+                        <p>Temos parceria com diversas plataformas de pagamento online, como MercadoPago, PagSeguro, PayPal, PicPay e BoaCompra, com isso, sua compra é 100% segura. Também aceitamos transferência via PIX, boleto bancário e cartões de débito Visa e MasterCard.</p>
+                    </div>
+
+                </div>
+
+                <div class="caixa-info">
+                    <div class="caixa-info-cima">
+                        <h3>Posso fazer pagamento via transferência?</h3>
+                        <div class="circulo">
+                            <div class="linha-h"></div>
+                            <div class="linha-v"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-info">
+                    <div class="caixa-info-cima">
+                        <h3>Posso pagar depois do serviço realizado?</h3>
+                        <div class="circulo">
+                            <div class="linha-h"></div>
+                            <div class="linha-v"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-info">
+                    <div class="caixa-info-cima">
+                        <h3>Solicitei o serviço errado. Posso pedir estorno?</h3>
+                        <div class="circulo">
+                            <div class="linha-h"></div>
+                            <div class="linha-v"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-info">
+                    <div class="caixa-info-cima">
+                        <h3>Quais são as formas de pagamento aceitas?</h3>
+                        <div class="circulo">
+                            <div class="linha-h"></div>
+                            <div class="linha-v"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="jinx" src="imagens/jinx.png" alt="jinx, uma personagem do jogo League of Leagends."> -->
+
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="footer-area">
+            <div class="caixa-footer">
+                <div class="coluna-footer declaracao">
+                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster">
+                    <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
+                </div>
+
+                <div class="opcoes-footer">
+
+                    <div class="coluna-footer">
+                        <h3>Legal</h3>
+                        <p><a href="#">Termos de Uso</a></p>
+                        <p><a href="#">Política de Privacidade</a></p>
+                    </div>
+
+                    <div class="coluna-footer">
+                        <h3>Suporte</h3>
+                        <p><a href="#">WhatsApp</a></p>
+                        <p><a href="#">Chat Online</a></p>
+                        <p><a href="#">E-mail</a></p>
+                    </div>
+                    
+                    <div class="coluna-footer">
+                        <h3>Jogos</h3>
+                        <p><a href="#">PokeXGames - PxG</a></p>
+                        <p><a href="#">League of Legends</a></p>
+                        <p><a href="#">Tibia</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coluna-footer footer-final">
+                <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
+                <div class="flex-logos-footer">
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/facebook-logo.png" alt="Logo do Facebook."></a>
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/instagram-logo.png" alt="Logo do Instagram."></a>
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/discord-logo.png" alt="Logo do Discord."></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

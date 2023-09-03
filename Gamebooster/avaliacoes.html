@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/avaliacoes.css">
+    <script src="script/script.js"></script>
+    <title>Avaliações</title>
+</head>
+<body>
+
+    <div>
+        <div class="overlay">
+            
+            <div class="login">
+                <div class="div-sair">
+                    <div class="sair" onclick="toggleLogin()">X</div>
+                </div>
+
+                <div class="login-texto">
+                    <h1>Efetuar Login</h1>
+
+                    <p>Acesse sua conta GameBooster</p>
+                </div>
+
+                <div class="continuar-ops">
+                    <div class="continuar">
+                        <img src="imagens/google.png" alt="Logo do Google">
+                        <p>Continuar com o Google</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook.">
+                        <p>Continuar com o Facebook</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/discord-icon.png" alt="Logo do Discord.">
+                        <p>Continuar com o Discord</p>
+                    </div>
+                </div>
+
+                <div class="centraliza-log">
+                    <div class="div-ou">
+                        <div></div>
+                        
+                        <p>ou</p>
+    
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="email-senha">
+                    
+                    <form action="#" class="form">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
+
+                        <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+                    </form>
+
+                    <p class="esq-sen">Esqueceu a senha?</p>
+
+                </div>
+
+                <div class="confirmar">
+                    <button>Confirmar</button>
+                </div>
+
+                <div class="confirmar">
+                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html"><img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="item-nav servicos-drop">
+                        <div class="op-serv">
+                            <p>Serviços</p>
+
+                            <div class="triangulo"></div>
+                        </div>
+                        <ul class="caixa-servicos">
+                            <li><a class="servico" href="#">PokeXGames</a></li>
+                            <li><a class="servico" href="lol.html">League of Legends</a></li>
+                            <li><a class="servico" href="#">Tibia</a></li>
+                            <li><a class="servico" href="#">Contas</a></li>
+                        </ul>
+                    </li>
+                    <li class="item-nav"><a href="avaliacoes.html">Avaliações</a></li>
+                    <li class="item-nav"><a href="faq.html">FAQ</a></li>
+                    <li id="login-icone">
+                        <button id="botao-login" onclick="toggleLogin()">
+                                <img id="login-icone-img" src="imagens/login-icone.png" alt="Ícone de login.">
+                                <span>Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="caixa-titulo-av">
+            <div class="caixa-estrelas">
+                <div class="five-pointed-star"></div>
+                <div class="five-pointed-star"></div>
+                <div class="five-pointed-star"></div>
+                <div class="five-pointed-star"></div>
+                <div class="five-pointed-star"></div>
+            </div>
+
+            <h1>VEJA O FEEDBACK DOS NOSSOS CLIENTES E DA COMUNIDADE!</h1>
+
+            <p>Nossos princípios são levados a sério, por isso prezamos pela transparência e clareza nas relações profissionais</p>
+        </div>
+        
+        <div class="container3">
+
+            <h2>POKEXGAMES</h2>
+
+            <div class="caixa-comentarios">
+
+                <img class="seta" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #001</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>MEWTWO FINAL QUEST</h4>
+
+                        <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
+
+                        <p class="nome">• Gabriel</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #002</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>UNOWN CHALLENGE</h4>
+
+                        <p>Serviço rápido demais, o mano joga mto e é atencioso demais. Recomendo 100%! O cara é o bicho!</p>
+
+                        <p class="nome">• Lucas</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #003</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>THE CHOSEN ONE - DUNGEON</h4>
+    
+                        <p>Atendimento muito bom, explicou com muita paciência e foi super gente boa. Recomendo demais!</p>
+    
+                        <p class="nome">• Bárbara</p>
+                    </div>
+                </div>
+
+                <img class="seta" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+            </div>
+        </div>
+
+        <div class="container3">
+            
+            <h2>LEAGUE OF LEGENDS</h2>
+
+            <div class="caixa-comentarios">
+
+                <img class="seta" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #004</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>Eloboosting (Prata III - Ouro IV)</h4>
+
+                        <p>Muito acessível, informando todo o momento. Além de entregar o pedido de forma rápida.</p>
+
+                        <p class="nome">• Vitor</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #005</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>Eloboosting (Plat. II - Diam. IV)</h4>
+
+                        <p>Muito bem jogado, serviço rápido e eficiente. O cara foi gente boa e caprichou no que eu pedi.</p>
+
+                        <p class="nome">• Beatriz</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #006</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>MD10 (9 Jogos)</h4>
+    
+                        <p>Joga muito, consegue subir de elo independente do boneco, não acreditei quando vi o que ele fez kkk.</p>
+    
+                        <p class="nome">• ANÔNIMO</p>
+                    </div>
+                </div>
+
+                <img class="seta" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+            </div>
+        </div>
+        
+        <div class="container3 tibia">
+            
+            <h2>TIBIA</h2>
+
+            <div class="caixa-comentarios">
+
+                <img class="seta" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #007</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>PITS OF INFERNO</h4>
+
+                        <p>Fez toda a quest com stream aberta para que eu pudesse assistir e opinar na decisão dos itens. Sensacional!</p>
+
+                        <p class="nome">• Caio</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #008</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>ANNIHILATOR</h4>
+
+                        <p>Meu sonho foi realizado graças a vocês da GameBooster! Não tenho palavras para agradecer!! Simplesmente demais!</p>
+
+                        <p class="nome">• Fabíola</p>
+                    </div>
+                </div>
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #009</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>CHAR (Lvl 211 - Elite Knight)</h4>
+    
+                        <p>Char super em conta e com muitos itens no inventário. Agora posso fazer hunts para profit. Éh nois na fita!</p>
+    
+                        <p class="nome">• ANÔNIMO</p>
+                    </div>
+                </div>
+
+                <img class="seta" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-area">
+            <div class="caixa-footer">
+                <div class="coluna-footer declaracao">
+                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster">
+                    <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
+                </div>
+
+                <div class="opcoes-footer">
+
+                    <div class="coluna-footer">
+                        <h3>Legal</h3>
+                        <p><a href="#">Termos de Uso</a></p>
+                        <p><a href="#">Política de Privacidade</a></p>
+                    </div>
+
+                    <div class="coluna-footer">
+                        <h3>Suporte</h3>
+                        <p><a href="#">WhatsApp</a></p>
+                        <p><a href="#">Chat Online</a></p>
+                        <p><a href="#">E-mail</a></p>
+                    </div>
+                    
+                    <div class="coluna-footer">
+                        <h3>Jogos</h3>
+                        <p><a href="#">PokeXGames - PxG</a></p>
+                        <p><a href="#">League of Legends</a></p>
+                        <p><a href="#">Tibia</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="coluna-footer footer-final">
+                <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
+                <div class="flex-logos-footer">
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/facebook-logo.png" alt="Logo do Facebook."></a>
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/instagram-logo.png" alt="Logo do Instagram."></a>
+                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/discord-logo.png" alt="Logo do Discord."></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
