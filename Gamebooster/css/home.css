@@ -1,16 +1,9 @@
-/* Index */
 
 .container {
     padding-top: 60px;
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
-}
-
-h1 {
-    font-size: 3rem;
-    color: #FFF;
-    margin: 0;
 }
 
 .parte-esq p {

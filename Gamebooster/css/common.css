@@ -21,6 +21,12 @@ p, ul, h3, h2, h1, input {
     padding: 0;
 }
 
+h1 {
+    font-size: 3rem;
+    color: #FFF;
+    margin: 0;
+}
+
 #botao-login, .servicos, .brilinho, .servico, .menu-ham a, #invisivel-servicos ~ li.container-servicos-2 span {
     transition: text-shadow 0.3s ease;
 }
@@ -172,6 +178,9 @@ li:hover .caixa-servicos {
     padding-top: 7px;
 }
 
+
+/* Menu Celular */
+
 .nav-cel {
     display: none;
     max-width: max-content;
@@ -317,7 +326,7 @@ li:hover .caixa-servicos {
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    top: 168px;
+    top: 148px;
     left: 30px;
     width: 94px;
     height: 25px;
@@ -336,25 +345,25 @@ li:hover .caixa-servicos {
 }
 
 #servico-a {
-    top: 210px;
+    top: 195px;
     transform: translate(-170%, 0);
-    transition: transform 0.7s;
+    transition: transform 0.2s;
 }
 
 #servico-b {
-    top: 250px;
+    top: 235px;
     transform: translate(-220%, 0);
-    transition: transform 0.6s;
+    transition: transform 0.3s;
 }
 
 #servico-c {
-    top: 290px;
+    top: 275px;
     transform: translate(-500%, 0);
-    transition: transform 0.5s;
+    transition: transform 0.4s;
 }
 
 #servico-d {
-    top: 330px;
+    top: 315px;
     transform: translate(-600%, 0);
     transition: transform 0.3s;
 }
@@ -402,7 +411,7 @@ li:hover .caixa-servicos {
 }
 
 #invisivel-servicos ~ .margem {
-    animation-duration: 0.9s;
+    animation-duration: 0.6s;
     animation-name: margem-menor;
     animation-fill-mode: forwards;
 }

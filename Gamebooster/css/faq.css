@@ -1,3 +1,23 @@
+
+.caixa-titulo-av {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.caixa-titulo-av h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.caixa-titulo-av p {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 .pesquisa-container {
     display: flex;
     justify-content: center;
@@ -8,7 +28,7 @@
 .lupa {
     background-color: #ffffff;
     border-radius: 20px 0px 0px 20px;
-    height: 67px;
+    height: 65px;
     width: 60px;
     display: flex;
     align-items: center;
@@ -35,14 +55,14 @@
     align-items: center;
     font-size: 1.25rem;
     background-color: #FF2400;
-    height: 67px;
+    height: 65px;
     width: 140px;
     border-radius: 0px 20px 20px 0px;
 }
 
 .topicos-faq {
-    margin-top: 50px;
-    margin-bottom: 100px;
+    max-width: 1000px;
+    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -68,25 +88,16 @@
 }
 
 .caixa-faq {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    max-width: 1240px;
+    margin: 0 auto;
     margin-bottom: 180px;
-    background-image: url(../imagens/jinx.png);
-    background-repeat: no-repeat;
-    background-position-x: 117%;
-    background-position-y: 40%;
-    background-size: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .jinx {
-    z-index: -1;
     max-width: 100%;
     height: 700px;
-    /* float: right;
-    position: absolute;
-    right: 200px;
-    top: 800px; */
 }
 
 .caixa-info {

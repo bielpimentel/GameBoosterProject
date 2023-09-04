@@ -9,9 +9,8 @@
     <title>Avaliações</title>
 </head>
 <body>
-
     <div>
-        <div class="overlay">
+        <div class="login-caixa">
             
             <div class="login">
                 <div class="div-sair">
@@ -76,35 +75,79 @@
     </div>
 
     <header>
-        <div class="container">
+        <div class="container-header">
             <div class="logo-header">
-                <a href="index.html"><img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster"></a>
+                <a class="logo-cv" href="index.html">
+                    <img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster">
+                </a>
             </div>
 
-            <nav>
-                <ul>
-                    <li class="item-nav servicos-drop">
-                        <div class="op-serv">
-                            <p>Serviços</p>
-
-                            <div class="triangulo"></div>
-                        </div>
+            <nav class="nav-comp">
+                <ul class="itens-nav">    
+                    <li class="container-servicos">
+                        <div class="servicos">Serviços</div>
                         <ul class="caixa-servicos">
-                            <li><a class="servico" href="#">PokeXGames</a></li>
-                            <li><a class="servico" href="lol.html">League of Legends</a></li>
-                            <li><a class="servico" href="#">Tibia</a></li>
-                            <li><a class="servico" href="#">Contas</a></li>
+                            <li><a class="servico borda-f">PokeXGames</a></li>
+                            <li><a class="servico borda-f">League of Legends</a></li>
+                            <li><a class="servico borda-f">Tibia</a></li>
+                            <li><a class="servico men">Contas</a></li>
                         </ul>
                     </li>
-                    <li class="item-nav"><a href="avaliacoes.html">Avaliações</a></li>
-                    <li class="item-nav"><a href="faq.html">FAQ</a></li>
-                    <li id="login-icone">
+                    <li class="brilinho"><a href="avaliacoes.html">Avaliações</a></li>
+                    <li class="brilinho"><a href="faq.html">FAQ</a></li>
+                    <li>
                         <button id="botao-login" onclick="toggleLogin()">
-                                <img id="login-icone-img" src="imagens/login-icone.png" alt="Ícone de login.">
-                                <span>Login</span>
+                            <img class="passar-c" src="imagens/avatar-brilho.svg" alt="Icone de login com brilho.">
+                            <img class="mostrada" src="imagens/avatar.svg" alt="Icone de login.">
+                            <span>Login</span>
                         </button>
                     </li>
                 </ul>
+            </nav>
+
+            <nav class="nav-cel">
+                <div class="menu-ham">
+                
+                    <input id="caixa-invisivel" type="checkbox">       
+    
+                    <div class="fatias">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                
+                    <ul class="menu">
+                        <li class="menu-ham-tipog">
+                            <a href="#"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
+    
+                            <div class="menu-x">
+                                <input id="caixa-invisivel-2" type="checkbox" >
+    
+                                <div class="x-ham">
+                                    <span class="x1"></span>
+                                    <span class="x2"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <input id="invisivel-servicos" type="checkbox">
+                        <li class="container-servicos-2">
+                            <span>Serviços</span>
+                            <ul class="caixa-servicos-2">
+                                <li id="servico-a"><a href="lol.html">PokeXGames</a></li>
+                                <li id="servico-b"><a href="lol.html">League of Legends</a></li>
+                                <li id="servico-c"><a href="lol.html">Tibia</a></li>
+                                <li id="servico-d"><a href="lol.html">Contas</a></li>
+                            </ul>
+                        </li>
+                        <li class="margem"></li>
+                        <li><a href="#">Avaliações</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li class="menu-ham-log">
+                            <button id="botao-login-ham" onclick="toggleLogin()">LOGIN</button>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -343,48 +386,48 @@
     </main>
 
     <footer>
+
         <div class="footer-area">
             <div class="caixa-footer">
-                <div class="coluna-footer declaracao">
-                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster">
+                <div class="declaracao">
+                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster escrito de forma estilizada.">
                     <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
                 </div>
 
-                <div class="opcoes-footer">
+                <nav class="opcoes-footer">
 
-                    <div class="coluna-footer">
-                        <h3>Legal</h3>
-                        <p><a href="#">Termos de Uso</a></p>
-                        <p><a href="#">Política de Privacidade</a></p>
-                    </div>
+                    <ul class="coluna-footer">
+                        <li>Legal</li>
+                        <li><a class="brilinho" href="#">Termos de Uso</a></li>
+                        <li><a class="brilinho" href="#">Política de Privacidade</a></li>
+                    </ul>
 
-                    <div class="coluna-footer">
-                        <h3>Suporte</h3>
-                        <p><a href="#">WhatsApp</a></p>
-                        <p><a href="#">Chat Online</a></p>
-                        <p><a href="#">E-mail</a></p>
-                    </div>
+                    <ul class="coluna-footer">
+                        <li>Suporte</li>
+                        <li><a class="brilinho" href="#">WhatsApp</a></li>
+                        <li><a class="brilinho" href="#">Chat Online</a></li>
+                        <li><a class="brilinho" href="#">E-mail</a></li>
+                    </ul>
                     
-                    <div class="coluna-footer">
-                        <h3>Jogos</h3>
-                        <p><a href="#">PokeXGames - PxG</a></p>
-                        <p><a href="#">League of Legends</a></p>
-                        <p><a href="#">Tibia</a></p>
-                    </div>
+                    <ul class="coluna-footer">
+                        <li>Jogos</li>
+                        <li><a class="brilinho" href="#">PokeXGames - PxG</a></li>
+                        <li><a class="brilinho" href="lol.html">League of Legends</a></li>
+                        <li><a class="brilinho" href="#">Tibia</a></li>
+                    </ul>
 
-                </div>
+                </nav>
             </div>
 
-            <div class="coluna-footer footer-final">
+            <div class="footer-final">
                 <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
                 <div class="flex-logos-footer">
-                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/facebook-logo.png" alt="Logo do Facebook."></a>
-                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/instagram-logo.png" alt="Logo do Instagram."></a>
-                    <a class="fundo-branco" href="#"><img class="logos-footer" src="imagens/discord-logo.png" alt="Logo do Discord."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/facebook-logo-b.png" alt="Logo do Facebook."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/instagram-logo-b.png" alt="Logo do Instagram."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/discord-logo-b.png" alt="Logo do Discord."></a>
                 </div>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
