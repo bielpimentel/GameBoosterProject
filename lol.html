@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lol.css">
+    <script src="script/script.js"></script>
+    <title>GameBooster</title>
+</head>
+<body>
+    <div>
+        <div class="login-caixa">
+            
+            <div class="login">
+                <div class="div-sair">
+                    <div class="sair" onclick="toggleLogin()">X</div>
+                </div>
+
+                <div class="login-texto">
+                    <h1>Efetuar Login</h1>
+
+                    <p>Acesse sua conta GameBooster</p>
+                </div>
+
+                <div class="continuar-ops">
+                    <div class="continuar">
+                        <img src="imagens/google.png" alt="Logo do Google">
+                        <p>Continuar com o Google</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/facebook.png" alt="Logo do Facebook.">
+                        <p>Continuar com o Facebook</p>
+                    </div>
+
+                    <div class="continuar">
+                        <img src="imagens/discord-icon.png" alt="Logo do Discord.">
+                        <p>Continuar com o Discord</p>
+                    </div>
+                </div>
+
+                <div class="centraliza-log">
+                    <div class="div-ou">
+                        <div></div>
+                        
+                        <p>ou</p>
+    
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="email-senha">
+                    
+                    <form action="#" class="form">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail ou login">
+
+                        <input type="password" name="senha" id="senha" maxlength="14" placeholder="Digite sua senha">
+                    </form>
+
+                    <p class="esq-sen">Esqueceu a senha?</p>
+
+                </div>
+
+                <div class="confirmar">
+                    <button>Confirmar</button>
+                </div>
+
+                <div class="confirmar">
+                    <p class="nao-conta">Não possui uma conta? <a class="cadastre" href="#">Cadastre-se</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-header">
+            <div class="logo-header">
+                <a class="logo-cv" href="index.html">
+                    <img class="logo-cv" src="imagens/logo-cv.png" alt="Logo da Gamebooster">
+                </a>
+            </div>
+
+            <nav class="nav-comp">
+                <ul class="itens-nav">    
+                    <li class="container-servicos">
+                        <div class="servicos">Serviços</div>
+                        <ul class="caixa-servicos">
+                            <li><a class="servico borda-f">PokeXGames</a></li>
+                            <li><a class="servico borda-f">League of Legends</a></li>
+                            <li><a class="servico borda-f">Tibia</a></li>
+                            <li><a class="servico men" href="contas.html">Contas</a></li>
+                        </ul>
+                    </li>
+                    <li class="brilinho"><a href="avaliacoes.html">Avaliações</a></li>
+                    <li class="brilinho"><a href="faq.html">FAQ</a></li>
+                    <li>
+                        <button id="botao-login" onclick="toggleLogin()">
+                            <img class="passar-c" src="imagens/avatar-brilho.svg" alt="Icone de login com brilho.">
+                            <img class="mostrada" src="imagens/avatar.svg" alt="Icone de login.">
+                            <span>Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-cel">
+                <div class="menu-ham">
+                
+                    <input id="caixa-invisivel" type="checkbox">       
+    
+                    <div class="fatias">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                
+                    <ul class="menu">
+                        <li class="menu-ham-tipog">
+                            <a href="index.html"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
+    
+                            <div class="menu-x">
+                                <input id="caixa-invisivel-2" type="checkbox" >
+    
+                                <div class="x-ham">
+                                    <span class="x1"></span>
+                                    <span class="x2"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <input id="invisivel-servicos" type="checkbox">
+                        <li class="container-servicos-2">
+                            <span>Serviços</span>
+                            <ul class="caixa-servicos-2">
+                                <li id="servico-a"><a href="lol.html">PokeXGames</a></li>
+                                <li id="servico-b"><a href="lol.html">League of Legends</a></li>
+                                <li id="servico-c"><a href="lol.html">Tibia</a></li>
+                                <li id="servico-d"><a href="contas.html">Contas</a></li>
+                            </ul>
+                        </li>
+                        <li class="margem"></li>
+                        <li><a href="avaliacoes.html">Avaliações</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="menu-ham-log">
+                            <button id="botao-login-ham" onclick="toggleLogin()">LOGIN</button>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container4">
+            <div class="caix-esquerda">
+                <div class="caix-esquerda-to">
+                    <h1 class="titu-h1">ELOBOOSTING (ELO JOB)</h1>
+    
+                    <p class="titu-p">Selecione em qual liga/divisão está atualmente e, na sequência, selecione qual liga/divisão desejada para a sua conta.</p>
+                </div>
+    
+                <div class="flex-elo">
+                    <div class="elo">
+                        <h2>ELO ATUAL</h2>
+    
+                        <div class="rank-nivel">
+                            <p>Ouro</p>
+    
+                            <img src="imagens/seta-baixo.png" alt="Uma seta apontada para baixo.">
+                        </div>
+    
+                        <img src="imagens/badge-gold.png" alt="Uma insiguinia de ouro.">
+    
+                        <h3>OURO - IV</h3>
+    
+                        <div class="rank-nivel">
+                            <p>4</p>
+    
+                            <img src="imagens/seta-baixo.png" alt="Uma seta apontada para baixo.">
+                        </div>
+                    </div>
+    
+                    <div class="elo">
+                        <h2>ELO DESEJADO</h2>
+    
+                        <div class="rank-nivel">
+                            <p>Platina</p>
+    
+                            <img src="imagens/seta-baixo.png" alt="Uma seta apontada para baixo.">
+                        </div>
+    
+                        <img src="imagens/badge-platinum.png" alt="Uma insiguinia de platina.">
+    
+                        <h3>PLATINA - IV</h3>
+    
+                        <div class="">
+                            <div class="rank-nivel">
+                                <p>4</p>
+        
+                                <img src="imagens/seta-baixo.png" alt="Uma seta apontada para baixo.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caix-direita">
+                <img src="imagens/lee-sin.png" alt="Lee Sin, um personagem do jogo League of Leagends.">
+
+                <div>
+                    <div class="avaliacoes-num">
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star"></div>
+                            <div class="five-pointed-star"></div>
+                            <div class="five-pointed-star"></div>
+                            <div class="five-pointed-star"></div>
+                            <div class="five-pointed-star"></div>
+                        </div>
+
+                        <p>45 avaliações</p>
+                    </div>
+
+                    <div class="texto-lol">
+                        <h2>Eloboosting (ouro IV - Platina IV)</h2>
+
+                        <p>Selecione os adicionais</p>
+                    </div>
+
+                    <div class="adicionais">
+                        <div class="texto-lol">
+                            <p class="texto-lol-p">Champions específicos</p>
+                            <p class="texto-lol-p-2">Horários predefinidos</p>
+                            <p class="texto-lol-p-3">Chat offline</p>
+                        </div>
+                        <div class="m-conjunto">
+                            <div class="conjunto">
+                                <p>+20%</p>
+                                
+                                <div class="p-retang" id="vermel-ba">
+                                    <div class="circulo-p"></div>
+                                </div>    
+                            </div>
+                            
+
+                            <div class="conjunto co2">
+                                <p>+10%</p>
+                                
+                                <div class="p-retang">
+                                    <div class="circulo-p"></div>
+                                </div>    
+                            </div>
+
+                            <div class="conjunto co3">
+                                <p>Free</p>
+                                
+                                <div class="p-retang">
+                                    <div class="circulo-p"></div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fundo-p">
+
+            <div class="container">
+                <h3>Informações do pedido</h3>
+                <p>– O cliente não poderá jogar partidas Ranqueadas no período vigente do serviço;</p>
+                <p>– O cliente não poderá logar na conta no MOMENTO em que o serviço estiver sendo executado;</p>
+                <p>– É necessário que a conta possua, no mínimo, 20 campeões habilitados para que seja possível jogar partidas ranqueadas e executar o serviço;</p>
+                <p>– Em caso raro de o Booster falhar alguma MD3 ou cair de divisão, garantimos integralmente o retorno do elo e classificatória sem custo adicional;</p>
+                <p>– Caso esteja ganhando menos de 15 pontos por vitória, será cobrada a taxa de neutralização de MMR;</p>
+                <p>– Ainda possui alguma dúvida? Entre em contato conosco!</p>
+
+                <p id="diferente"><span>OBS:</span> O cliente irá acompanhar todo o processo através de um chat exclusivo com o Booster no servidor do Discord, usufruindo assim, de um método prático e confortável.</p>
+            </div>
+
+            
+        </div>
+
+        <div class="container caixa-avaliacao-m">
+            <div class="mini-avaliacao">
+
+                <img class="seta" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+
+                <div class="caixa-avaliacao">
+                    <div class="caixa-avaliacao-cima">
+                        <h3>PEDIDO #001</h3>
+                        <div class="caixa-estrelas">
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                            <div class="five-pointed-star2"></div>
+                        </div>
+                    </div>
+                    <div class="caixa-avaliacao-baixo">
+                        <h4>Eloboosting (Plat. II - Diam. IV)</h4>
+
+                        <p>Muito bem jogado, serviço rápido e eficiente. O cara foi gente boa e caprichou no que eu pedi.</p>
+
+                        <p class="nome">• Beatriz</p>
+                    </div>
+                </div>
+
+                <img class="seta" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+            </div>
+
+            <div class="caixa-opiniao">
+                <h2>A OPINIÃO DOS NOSSOS CLIENTES IMPORTA!</h2>
+
+                <p>Nosso maior objetivo é a satisfação plena dos clientes, por isso temos uma página dedicada apenas às avaliações e feedbacks</p>
+                
+                <a href="avaliacoes.html"><div class="botao-laranja garanta">Veja Mais</div></a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-area">
+            <div class="caixa-footer">
+                <div class="declaracao">
+                    <img class="tipografia-pb" src="imagens/tipografia-PeB.png" alt="GameBooster escrito de forma estilizada.">
+                    <p>A GameBooster© declara que não possui vínculo algum com as empresas responsáveis pelos jogos citados nesta página.</p>
+                </div>
+
+                <nav class="opcoes-footer">
+
+                    <ul class="coluna-footer">
+                        <li>Legal</li>
+                        <li><a class="brilinho" href="#">Termos de Uso</a></li>
+                        <li><a class="brilinho" href="#">Política de Privacidade</a></li>
+                    </ul>
+
+                    <ul class="coluna-footer">
+                        <li>Suporte</li>
+                        <li><a class="brilinho" href="#">WhatsApp</a></li>
+                        <li><a class="brilinho" href="#">Chat Online</a></li>
+                        <li><a class="brilinho" href="#">E-mail</a></li>
+                    </ul>
+                    
+                    <ul class="coluna-footer">
+                        <li>Jogos</li>
+                        <li><a class="brilinho" href="#">PokeXGames - PxG</a></li>
+                        <li><a class="brilinho" href="lol.html">League of Legends</a></li>
+                        <li><a class="brilinho" href="#">Tibia</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="footer-final">
+                <p>© 2023 GameBooster Inc. Todos os direitos reservados.</p>
+                <div class="flex-logos-footer">
+                    <a href="#"><img class="logos-footer" src="imagens/facebook-logo-b.png" alt="Logo do Facebook."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/instagram-logo-b.png" alt="Logo do Instagram."></a>
+                    <a href="#"><img class="logos-footer" src="imagens/discord-logo-b.png" alt="Logo do Discord."></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
