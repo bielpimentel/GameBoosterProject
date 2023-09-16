@@ -14,10 +14,6 @@ function plusFlip(event) {
 
   const atual = event.currentTarget;
 
-    if (atual.classList.contains('flip')) {
-        atual.classList.remove('flip');
-    } else {
-        atual.classList.add('flip');
-    }
-  
+    atual.classList.toggle('flip');
+    
 }
