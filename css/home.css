@@ -20,39 +20,43 @@
 }
 
 .caixa-setas {
+    max-width: 1240px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1240px;
-    margin: 0 auto;
 }
 
 .container2 {
-    padding-top: 40px;
+    height: 450px;
     width: 1080px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: scroll;
 }
 
-.setas {
+.container2::-webkit-scrollbar {
+    display: none;
+}
+
+.seta-direita, .seta-esquerda {
+    max-width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* .setas {
     max-width: 100%;
     height: 70px;
-    transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    transition: 150ms; ---------- ALTERADO EM 08/09/2023 (Gabriel) ----------
 }
 
 .seta {
     max-width: 100%;
     height: 50px;
-    transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-}
-
-.setas:hover,                                         
-.seta:hover {           /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    -webkit-filter: drop-shadow(0px 0px 4px #bbb);
-    filter: drop-shadow(0px 0px 4px #bbb);
-    cursor: pointer;
-}
+    transition: 150ms; ---------- ALTERADO EM 08/09/2023 (Gabriel) ----------
+} */
 
 .caixa-jogos {
     background-color: #D9D9D9;
@@ -66,12 +70,17 @@
     border-radius: 20px;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
     font-size: 1.5rem;
+    flex-shrink: 0;
     padding-bottom: 10px; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
     transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
 }
 
 .caixa-jogos:hover {
-    transform: scale(1.10); /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+    transform: scale(1.1); /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
+}
+
+.tibia-esquerda {
+    margin-left: 20px;
 }
 
 .logo-jogos {
@@ -79,29 +88,17 @@
     height: 110px;
 }
 
-/* .caixa-jogos:hover .logo-jogos { ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- 
-    height: 150px;
-} */
-
 .caixa-jogos h3 {
     text-align: center;
     color: #B11313;
     font-size: 1.75rem;
 }
 
-/* .caixa-jogos:hover h3 { ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- 
-    font-size: 2rem;
-} */
-
 .caixa-jogos p {
     color: #202020;
     margin: 0 35px;
     text-align: center;
 }
-
-/* .caixa-jogos:hover p { ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- 
-    padding-bottom: 10px;
-} */
 
 .botao-laranja {
     background-color: #FF2400;
@@ -111,11 +108,6 @@
     padding: 15px 55px;
     border-radius: 40px;
     transition: 150ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-}
-
-.conferir {
-    padding: 15px 45px;
-    border-radius: 40px;
 }
 
 .botao-laranja:hover {
@@ -224,164 +216,7 @@
     margin: 0 40px;
 }
 
-/* 
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-*/
-
-.caixa-avaliacao-m {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 50px; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    padding: 100px 0;
-}
-
-.mini-avaliacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex: 1;
-}
-
-.caixa-opiniao {
-    flex: 1;
-}
-
-.caixa-opiniao h2 {
-    font-size: 3rem;
-    color: #ffffff;
-    margin: 0 0 20px; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-}
-
-.caixa-opiniao p {
-    font-size: 1.5rem;
-    color: #A5A5A5;
-    margin-bottom: 50px;
-}
-
-.caixa-estrelas {
-    display: flex;
-    justify-content: center;
-    column-gap: 3px;
-}
-
-.caixa-comentarios {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.caixa-avaliacao {
-    background-color: #D9D9D9;
-    height: 408px;
-    width: 345px;
-    border: 5px solid #D9D9D9;
-    border-radius: 20px; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    transition: 180ms; /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-}
-
-.caixa-avaliacao:hover { /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-    box-shadow: 0px 0px 9px 0px #bbbbbb;
-}
-
-.caixa-avaliacao-cima {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D9D9D9;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.caixa-avaliacao-cima .caixa-estrelas {
-    margin-bottom: 15px;
-}
-
-.caixa-avaliacao-cima h3 {
-    font-size: 1.75rem;
-    margin: 15px 0 10px 0;
-}
-
-.five-pointed-star2 {
-    --star-color: #FF2400;
-    margin:1em auto;
-    font-size:0.85em;
-    position: relative;
-    display: block;
-    width: 0px;
-    height: 0px;
-    border-right: 1em solid transparent;
-    border-bottom: 0.7em solid var(--star-color);
-    border-left: 1em solid transparent;
-    transform: rotate(35deg);
-}
-
-.five-pointed-star2:before {
-    border-bottom: 0.8em solid var(--star-color);
-    border-left: 0.3em solid transparent;
-    border-right: 0.3em solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -0.45em;
-    left: -0.65em;
-    display: block;
-    content:"";
-    transform: rotate(-35deg);
-}
-
-.five-pointed-star2:after {
-    position: absolute;
-    display: block;
-    top: 0.03em;
-    left: -1.05em;
-    width: 0;
-    height: 0;
-    border-right: 1em solid transparent;
-    border-bottom: 0.7em solid var(--star-color);
-    border-left: 1em solid transparent;
-    transform: rotate(-70deg);
-    content:"";
-}
-
-.caixa-avaliacao-baixo {
-    height: 295px;
-    background-color: #111111;
-    border-radius: 0px 0px 15px 15px /* ---------- ALTERADO EM 08/09/2023 (Gabriel) ---------- */
-}
-
-.caixa-avaliacao-baixo h4 {
-    font-size: 1.375rem;
-    color: #ffffff;
-    margin: 0 0 0 20px;
-    padding: 30px 5px;
-}
-
-.caixa-avaliacao-baixo p {
-    font-size: 1.25rem;
-    color: #A5A5A5;
-    margin: 0 20px 45px 20px;
-}
-
-.caixa-avaliacao-baixo .nome {
-    color: #ffffff;
-    text-align: right;
-    margin: 0 20px;
-}
-
-/* 
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwert
-*/
-
-/* Responsivo */
+/* RESPONSIVO */
 
 
 @media screen and (max-width: 1300px) {
@@ -390,12 +225,12 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
         max-width: 850px;
     }
 
-    .parte-esq h1 {
+    .parte-esq h1, .caixa-opiniao h2 {
         font-size: 2.625rem;
     }
 
-    .parte-esq p {
-        font-size: 1.25rem;
+    .parte-esq p, .caixa-opiniao p {
+        font-size: 1.375rem;
     }
 
     .container div img {
@@ -432,7 +267,7 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
         height: 420px;
     }
 
-    .parte-esq h1 {
+    .parte-esq h1, .caixa-opiniao h2 {
         font-size: 2.25rem;
     }
 
@@ -449,11 +284,15 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
         max-width: 550px;
     }
 
+    .aparece {
+        display: inline;
+    }
+
     .desaparece {
         display: none;
     }
 
-    .vantagens .titulo-h2-h3 {
+    .vantagens .titulos-vantagens {
         margin: 0 auto;
         width: 650px;
     }
@@ -480,7 +319,6 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
     .caixa-vantagem-c {
         width: 340px;
     }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -496,19 +334,35 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
 
     .caixa-setas {
         padding-top: 60px;
-        max-width: 450px;
+        max-width: 400px;
+        justify-content: center;
     }
 
     .container2 {
-        max-width: 400px;
-        justify-content: space-around;
+        max-width: max-content;
     }
 
-    .desaparece2 {
+    .caixa-jogos {
+        margin: auto 10px;
+    }
+
+    .caixa-jogos:hover {
+        transform: none;
+    }
+
+    .seta-esquerda, .seta-direita {
         display: none;
     }
 
-    .vantagens .titulo-h2-h3 {
+    .caixa-jogos .tibia-esquerda {
+        margin-left: 0px;
+    }
+
+    .vantagens .titulos-vantagens h3 {
+        font-size: 2rem;
+    }
+
+    .vantagens .titulos-vantagens {
         width: 450px;
     }
 
@@ -524,7 +378,43 @@ sdjfgbnsjdfçgbndfsjkbnjkdsbfujghieouprtqwpoerl.vcxklçjnaziooijpqwertsdjfgbnsjd
     .container-van .caixa-vantagem {
         width: 320px;
     }
+
     .caixa-vantagem-c {
         margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        max-width: 300px;
+    }
+
+    .caixa-setas {
+        width: 300px;
+    }
+
+    .caixa-jogos {
+        width: 250px;
+    }
+
+    .caixa-jogos p{
+        font-size: 1.375rem;
+    }
+
+    .vantagens .titulos-vantagens {
+        width: 300px;
+    }
+
+    .vantagens .titulos-vantagens h3 {
+        font-size: 1.75rem;
+    }
+
+    .container-van .caixa-vantagem,.container-van  .caixa-vantagem-c {
+        width: 300px;
+    }
+
+    .container-van .caixa-vantagem p, .container-van  .caixa-vantagem-c p {
+        font-size: 1.375rem;
     }
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
     <script src="script/script.js"></script>
+    <script src="script/home.js"></script>
     <title>GameBooster</title>
 </head>
 <body>
@@ -85,14 +86,21 @@
             <nav class="nav-comp">
                 <ul class="itens-nav">    
                     <li class="container-servicos">
-                        <div class="servicos">Serviços</div>
+                        <span class="servicos">Serviços</span>
                         <ul class="caixa-servicos">
                             <li><a class="servico borda-f">PokeXGames</a></li>
                             <li><a class="servico borda-f">League of Legends</a></li>
                             <li><a class="servico borda-f">Tibia</a></li>
-                            <li><a class="servico men" href="contas.html">Contas</a></li>
+                            <li class="container-contas">
+                                <span class="brilinho">Contas</span>
+                                <ul class="caixa-contas">
+                                    <li class="servico borda-f brilinho">Anunciar (PxG)</li>
+                                    <li class="men brilinho">Comprar (PxG)</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
+                    <li class="brilinho"><a href="#">Intermédios</a></li>
                     <li class="brilinho"><a href="avaliacoes.html">Avaliações</a></li>
                     <li class="brilinho"><a href="faq.html">FAQ</a></li>
                     <li>
@@ -118,7 +126,7 @@
                 
                     <ul class="menu">
                         <li class="menu-ham-tipog">
-                            <a><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
+                            <a href="#"><img src="imagens/tipografia.png" alt="GameBooster escrito de forma estilizada."></a>
     
                             <div class="menu-x">
                                 <input id="caixa-invisivel-2" type="checkbox" >
@@ -131,21 +139,35 @@
                         </li>
                         <input id="invisivel-servicos" type="checkbox">
                         <li class="container-servicos-2">
-                            <span>Serviços</span>
+                            <span class="servicos-ham">Serviços</span>
                             <ul class="caixa-servicos-2">
-                                <li id="servico-a"><a href="lol.html">PokeXGames</a></li>
-                                <li id="servico-b"><a href="lol.html">League of Legends</a></li>
-                                <li id="servico-c"><a href="lol.html">Tibia</a></li>
-                                <li id="servico-d"><a href="contas.html">Contas</a></li>
+                                <li class="servicosabcd" id="servico-a"><a href="lol.html">PokeXGames</a></li>
+                                <li class="servicosabcd" id="servico-b"><a href="lol.html">League of Legends</a></li>
+                                <li class="servicosabcd" id="servico-c"><a href="lol.html">Tibia</a></li>
+                                <li class="servicosabcd" id="servico-d">
+
+                                    <input id="invisivel-contas" type="checkbox">
+
+                                    <div class="container-contas-2">
+                                        <span class="livra-caixa">Contas</span>
+                                        <ul class="caixa-contas-ham">
+                                            <li class="brilinho" id="conta-a">Anunciar (PxG)</li>
+                                            <li class="brilinho" id="conta-b">Comprar (PxG)</li>
+                                        </ul>
+                                    </div>
+
+                                </li>
                             </ul>
                         </li>
                         <li class="margem"></li>
-                        <li><a href="avaliacoes.html">Avaliações</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
+                        <li class="margem2"></li>
+                        <li class="brilinho"><a href="#">Intermédios</a></li>
+                        <li><a href="#">Avaliações</a></li>
+                        <li><a href="#">FAQ</a></li>
                         <li class="menu-ham-log">
                             <button id="botao-login-ham" onclick="toggleLogin()">LOGIN</button>
                         </li>
-                        <li></li>
+                        <li></li> <!-- Não apague isso -->
                     </ul>
                 </div>
             </nav>
@@ -167,46 +189,46 @@
             </div>
         </section>
 
-        <div class="caixa-setas">
+        <section class="caixa-setas">
 
-            <img class="setas" src="imagens/seta-esquerda.png" alt="Seta apontada para a esquerda.">
+            <img class="seta-esquerda seta" src="imagens/seta-esquerda.png" alt="Seta apondada para a esquerda.">
 
-            <section class="container2">
-                <div class="caixa-jogos desaparece2">
-                    <img class="logo-jogos" src="imagens/logo-tibia.gif" alt="Logo do jogo Tibia.">
+            <div class="container2">
+                <div class="caixa-jogos tibia-esquerda">
+                    <a href="#"><img class="logo-jogos" src="imagens/logo-tibia.gif" alt="Logo do jogo Tibia."></a>
     
-                    <h3>Tibia</h3>
+                    <a href="#"><h3>Tibia</h3></a>
     
                     <p>Diversas quests e compra de KK's e TibiaCoins</p>
     
                     <a class="botao-laranja conferir" href="#"><div>Conferir</div></a>
                 </div>
-    
+                
                 <div class="caixa-jogos">
-                    <img class="logo-jogos" src="imagens/logo-pxg.png" alt="Logo do jogo PokeXGames.">
+                    <a href="#"><img class="logo-jogos" src="imagens/logo-pxg.png" alt="Logo do jogo PokeXGames."></a>
     
-                    <h3>PxG</h3>
+                    <a href="#"><h3>PxG</h3></a>
     
                     <p>Services, compra de contas, KK's e level boost</p>
     
-                    <a class="botao-laranja conferir" href="contas.html"><div>Conferir</div></a>
+                    <a class="botao-laranja conferir" href="#"><div>Conferir</div></a>
                 </div>
     
-                <div class="caixa-jogos desaparece">
-                    <img class="logo-jogos" src="imagens/logo-lol.png" alt="Logo do jogo Legue of Leagends.">
+                <div class="caixa-jogos">
+                    <a href="#"><img class="logo-jogos" src="imagens/logo-lol.png" alt="Logo do jogo Legue of Leagends."></a>
     
-                    <h3>League of Legends</h3>
+                    <a href="#"><h3>League of Leagends</h3></a>
     
                     <p>Eloboosting, duoboosting e compra de contas</p>
     
                     <a class="botao-laranja conferir" href="lol.html"><div>Conferir</div></a>
                 </div>
                 
-            </section>
+            </div>
 
-            <img class="setas" src="imagens/seta-direita.png" alt="Seta apontada para a direita.">
+            <img class="seta-direita seta" src="imagens/seta-direita.png" alt="Seta apondada para a direita.">
 
-        </div>
+        </section>
 
         <div class="retangulos">
             <div class="retang-p"></div>
@@ -270,36 +292,83 @@
         </section>
 
         <section class="caixa-avaliacao-m">
-            <div class="mini-avaliacao">
 
-                <img class="seta" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+            <a class="aparece" href="avaliacoes.html"><div class="botao-laranja estica">Veja Mais</div></a>
 
-                <div class="caixa-avaliacao">
-                    <div class="caixa-avaliacao-cima">
-                        <h3>PEDIDO #001</h3>
-                        <div class="caixa-estrelas">
-                            <div class="five-pointed-star2"></div>
-                            <div class="five-pointed-star2"></div>
-                            <div class="five-pointed-star2"></div>
-                            <div class="five-pointed-star2"></div>
-                            <div class="five-pointed-star2"></div>
+            <div class="container-bolinhas">
+                <div class="mini-avaliacao">
+
+                    <img class="seta-esquerda-av-demo" src="imagens/seta-esquerda.png" alt="Uma seta apontada para a esquerda.">
+    
+                    <div class="rolagem-av">
+                        <div class="caixa-avaliacao">
+                            <div class="caixa-avaliacao-cima">
+                                <h3>PEDIDO #001</h3>
+                                <div class="caixa-estrelas">
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                </div>
+                            </div>
+                            <div class="caixa-avaliacao-baixo">
+                                <h4>MEWTWO FINAL QUEST</h4>
+        
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
+        
+                                <p class="nome">• Gabriel</p>
+                            </div>
+                        </div>
+                        <div class="caixa-avaliacao">
+                            <div class="caixa-avaliacao-cima">
+                                <h3>PEDIDO #001</h3>
+                                <div class="caixa-estrelas">
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                </div>
+                            </div>
+                            <div class="caixa-avaliacao-baixo">
+                                <h4>MEWTWO FINAL QUEST</h4>
+        
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
+        
+                                <p class="nome">• Gabriel</p>
+                            </div>
+                        </div>
+                        <div class="caixa-avaliacao tira-margem">
+                            <div class="caixa-avaliacao-cima">
+                                <h3>PEDIDO #001</h3>
+                                <div class="caixa-estrelas">
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                    <div class="five-pointed-star2"></div>
+                                </div>
+                            </div>
+                            <div class="caixa-avaliacao-baixo">
+                                <h4>MEWTWO FINAL QUEST</h4>
+        
+                                <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
+        
+                                <p class="nome">• Gabriel</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="caixa-avaliacao-baixo">
-                        <h4>MEWTWO FINAL QUEST</h4>
-
-                        <p>Fiquei impressionado com a rapidez do serviço e com a habilidade do jogador. Recomendarei aos amigos...</p>
-
-                        <p class="nome">• Gabriel</p>
-                    </div>
-                    <div class="retangulos">
-                        <div class="retang-p"></div>
-                        <div class="retang-p"></div>
-                        <div class="retang-p"></div>
-                    </div>
+    
+                    <img class="seta-direita-av-demo" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
                 </div>
 
-                <img class="seta" src="imagens/seta-direita.png" alt="Uma seta apontada para a direita.">
+                <div class="caixa-bolinhas">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </div>
 
             <div class="caixa-opiniao">
@@ -307,7 +376,7 @@
 
                 <p>Nosso maior objetivo é a satisfação plena dos clientes, por isso temos uma página dedicada apenas às avaliações e feedbacks</p>
                 
-                <a href="avaliacoes.html"><div class="botao-laranja garanta">Veja Mais</div></a>
+                <a href="avaliacoes.html"><div class="botao-laranja desaparece">Veja Mais</div></a>
             </div>
 
         </section>

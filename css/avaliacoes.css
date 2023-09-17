@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
-    max-width: 954px;
+    max-width: 950px;
     margin: 0 auto;
     margin-top: 42px;
     border-bottom: 2px solid #A5A5A5;
@@ -15,6 +15,123 @@
     justify-content: center;
     column-gap: 3px;
 }
+
+.caixa-titulo-av h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0 100px;
+}
+
+.caixa-titulo-av p {
+    font-size: 1.5rem;
+    color: #A5A5A5;
+    margin: 0 200px;
+    margin-bottom: 42px;
+}
+
+.container-av {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+h2.titulo-jogos {
+    color: #ffffff;
+    margin: 50px 390px 30px 390px;
+}
+
+.caixa-comentarios {
+    width: 1090px;
+    margin: 0 auto;
+    height: 420px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.caixa-comentarios::-webkit-scrollbar {
+    display: none;
+}
+
+.seta-direita-av, .seta-esquerda-av {
+    max-width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.caixa-avaliacao {
+    background: none;
+    height: 412px;
+    width: 342px;
+    border: 4px solid #D9D9D9;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.caixa-comentarios .sem-margem {
+    margin: 0;
+}
+
+.caixa-avaliacao-cima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.caixa-avaliacao-cima .caixa-estrelas {
+    margin-bottom: 15px;
+}
+
+.caixa-avaliacao-cima h3 {
+    font-size: 1.75rem;
+    margin: 15px 0 10px 0;
+}
+
+.caixa-avaliacao-baixo {
+    height: 295px;
+    background: none;
+    border-radius: 0px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.espacamento {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa-avaliacao-baixo h4 {
+    font-size: 1.375rem;
+    color: #ffffff;
+    margin: 30px 20px 0 20px;
+}
+
+.caixa-avaliacao-baixo p {
+    font-size: 1.25rem;
+    color: #A5A5A5;
+    margin: 0 20px;
+}
+
+.caixa-avaliacao-baixo .nome {
+    color: #ffffff;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.tibia {
+    margin-bottom: 100px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+/* Estrelas */
 
 .five-pointed-star {
     --star-color: #FF2400;
@@ -58,59 +175,6 @@
     content:"";
 }
 
-.caixa-titulo-av h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    margin: 0 100px;
-}
-
-.caixa-titulo-av p {
-    font-size: 1.5rem;
-    color: #A5A5A5;
-    margin: 0 200px;
-    margin-bottom: 42px;
-}
-
-.container3 {
-    max-width: 1224px;
-    margin: 0 auto;
-}
-
-.container3 > h2 {
-    color: #ffffff;
-    margin: 50px 0px 20px 110px;
-}
-
-.caixa-comentarios {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.caixa-avaliacao {
-    background-color: #D9D9D9;
-    height: 408px;
-    width: 345px;
-    border: 4px solid #D9D9D9;
-    border-radius: 27px;
-}
-
-.caixa-avaliacao-cima {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #D9D9D9;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.caixa-avaliacao-cima .caixa-estrelas {
-    margin-bottom: 15px;
-}
-
-.caixa-avaliacao-cima h3 {
-    font-size: 1.75rem;
-    margin: 15px 0 10px 0;
-}
 
 .five-pointed-star2 {
     --star-color: #FF2400;
@@ -154,35 +218,27 @@
     content:"";
 }
 
-.caixa-avaliacao-baixo {
-    height: 295px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around; */
-    background-color: #111111;
-    border-radius: 0px 0px 25px 25px;
-}
+/* RESPONSIVO */
 
-.caixa-avaliacao-baixo h4 {
-    font-size: 1.375rem;
-    color: #ffffff;
-    margin: 0 0 0 20px;
-    padding: 30px 5px;
-}
+@media screen and (max-width: 1250px) {
 
-.caixa-avaliacao-baixo p {
-    font-size: 1.25rem;
-    color: #A5A5A5;
-    margin: 0 20px 45px 20px;
-}
+    .caixa-titulo-av {
+        max-width: 900px;
+    }
 
-.caixa-avaliacao-baixo .nome {
-    color: #ffffff;
-    text-align: right;
-    margin: 0 20px;
-}
+    .caixa-titulo-av h1 {
+        font-size: 2.75rem;
+        margin: 0 80px;
+    }
 
-.tibia {
-    margin-bottom: 100px;
+    .container-av {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+    .caixa-comentarios {
+        width: 850px;
+    }
+
+
 }
